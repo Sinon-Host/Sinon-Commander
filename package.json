@@ -1,6 +1,6 @@
 {
-  "name": "sinon-commander",
-  "productName": "sinon-commander",
+  "name": "owo",
+  "productName": "owo",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "eslint src --color"
   },
   "keywords": [],
   "author": "rose",
@@ -32,7 +32,7 @@
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
-        "name": "sinon_commander"
+        "name": "owo"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -42,21 +42,24 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "sinoncommander"
+        "name": "owo"
       }
     }
   },
   "dependencies": {
     "electron-compile": "^6.4.3",
-    "electron-devtools-installer": "^2.2.4",
-    "electron-squirrel-startup": "^1.0.0",
-    "vue": "^2.5.21"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "electron-forge": "^5.2.3",
-    "electron-prebuilt-compile": "3.0.10"
+    "electron-prebuilt-compile": "3.0.10",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
